@@ -1,0 +1,3241 @@
+Global*/
+
+nav{
+	width: 100%;
+}
+
+nav[class*="nav-"]{
+	background: white;
+	height: 10vh;
+	max-width: 100%;
+	width: 100vw;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 0px 1rem;
+	box-shadow: 0 0 2px silver;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav[class*="nav-"] ~ *{
+	margin-top: 10vh !important;
+}
+
+nav.escuro{
+	background: #444;
+}
+
+nav.escuro .click{
+	box-shadow: inset 0 0 60px 15px #444 !important;
+	text-decoration: none;
+}
+
+nav.escuro .click:hover,
+nav.escuro .click:focus{
+	box-shadow: inset 0 0 0 0px #444 !important;
+}
+
+nav[class*="nav-"] .logo,
+nav[class*="nav-"] .inicio{
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	line-height: 0;
+}
+
+nav[class*="nav-"] .inicio{
+	overflow: visible;
+}
+
+nav[class*="nav-"] .perfil,
+nav[class*="nav-"] .inicio,
+nav[class*="nav-"] .meio,
+nav[class*="nav-"] .fim{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+nav[class*="nav-"] .perfil{
+	padding: 0px 20px;
+	padding-right: 0;
+}
+
+nav[class*="nav-"] .logo a{
+	display: block;
+}
+
+nav[class*="nav-"] .logo img,
+nav[class*="nav-"] .inicio .logo img{
+	height: 70%;
+	width: auto;
+	max-width: 180px;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+nav[class*="nav-"] .inicio .logo ~ .paginas{
+	margin-left: 30px;
+}
+
+nav[class*="nav-"] .paginas{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav[class*="nav-"] .paginas .pagina.detalhes{
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 0;
+	height: 50%;
+}
+
+nav[class*="nav-"] .paginas .pagina.detalhes.x{
+	margin-left: -10px;
+	margin-right: 1rem;
+}
+
+nav[class*="nav-"] .paginas .pagina.detalhes p,
+nav[class*="nav-"] .paginas .pagina.detalhes small{
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	text-align: left;
+	white-space: pre;
+}
+
+nav[class*="nav-"] .paginas .pagina.detalhes p + p{
+	margin-top: 18px;
+}
+
+nav[class*="nav-"] .paginas .pagina.detalhes p a{
+	padding: 0;
+	line-height: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+nav[class*="nav-"] .paginas > *{
+	line-height: 0;
+	margin: 0;
+}
+
+nav[class*='nav-'] .botao-paginas{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+nav[class*="nav-"] .paginas .pagina{
+	margin-right: 2rem;
+	transition: .4s;
+	display: block;
+	position: relative;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco{
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco::before{
+	content: '';
+	position: relative;
+	top: -1px;
+	width: 6px;
+	height: 6px;
+	border-left: 1px solid;
+	border-top: 1px solid;
+	transform: rotate(-135deg);
+	border-color: inherit;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco2{
+	height: 16px;
+	width: 16px;
+	border: 0px solid;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco2::before{
+	content: '';
+	height: 0px;
+	width: 100%;
+	display: block;
+	border-top: 2px solid;
+	position: relative;
+	border-color: inherit;
+	background: white;
+	z-index: 5;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco3{
+	height: 16px;
+	width: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: visible;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco3::before,
+nav[class*="nav-"] .paginas .pagina .arco3::after{
+	content: '';
+	width: 10px;
+	min-width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	display: block;
+	transform: rotate(135deg);
+	border-color: inherit;
+	position: relative;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco3::before{
+	top: -1px;
+}
+
+nav[class*="nav-"] .paginas .pagina .arco3::after{
+	top: -5px;
+}
+
+nav[class*="nav-"] .paginas .pagina > a{
+	text-decoration: none;
+}
+
+nav[class*="nav-"] .paginas .pagina:hover .balao-menu,
+nav[class*="nav-"] .paginas .pagina:focus .balao-menu,
+nav[class*="nav-"] .paginas .pagina > a:focus ~ .balao-menu{
+	height: auto;
+	transform: translateX(-30%);
+	top: 6vh;
+	opacity: 1;
+	padding: 20px;
+}
+
+nav[class*="nav-"] .paginas .pagina > .arco:focus ~ .balao-menu,
+nav[class*="nav-"] .paginas .pagina > .arco:hover ~ .balao-menu,
+nav[class*="nav-"] .paginas .pagina > .arco ~ .balao-menu:hover,
+nav[class*="nav-"] .paginas .pagina > .arco ~ .balao-menu:focus{
+	transform: translateX(-65%);
+}
+
+nav[class*="nav-"] .paginas .pagina .balao-menu{
+	position: absolute;
+	display: block;
+	width: 140px;
+	height: 0;
+	overflow: hidden;
+	top: 5vh;
+	left: 0;
+	transform: translateX(-100%);
+	opacity: 0;
+	padding: 0;
+	box-shadow: 0 0 10px #000;
+	background: white;
+	transition: .5s;
+}
+
+nav.escuro .paginas .pagina .balao-menu{
+	background: #444;
+}
+
+nav[class*="nav-"] .paginas .pagina .balao-menu a{
+	display: block;
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+	/*width: 100%;
+	text-align: center;*/
+}
+
+nav[class*="nav-"] .paginas .pagina .balao-menu a + a{
+	margin-top: 15px;
+}
+
+nav[class*="nav-"] .paginas .click{
+	box-shadow: inset 0 0 60px 15px white;
+	transition: box-shadow .8s,  color .8s;
+	height: 28px;
+	font-size: .9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 15px;
+	border: 1px groove transparent;
+	text-decoration: none;
+}
+
+nav[class*="nav-"] .paginas .click:active{
+	border-style: ridge;
+}
+
+nav[class*="nav-"] .paginas .click:hover,
+nav[class*="nav-"] .paginas .click:focus{
+	color: white;
+	box-shadow: inset 0 0 0 0px white;
+}
+
+nav[class*="nav-"] .pp{
+	line-height: 0;
+	background: transparent;
+	border: none;
+	overflow: visible;
+}
+
+nav[class*="nav-"] .pp.x{
+	margin-left: 20px;
+}
+
+nav[class*="nav-"] .pp img{
+	height: 40px !important;
+	max-height: 40px !important;
+	min-height: 40px !important;
+	width: 40px !important;
+	max-width: 40px !important;
+	min-width: 40px !important;
+	padding: 0 !important;
+	border-radius: 100%;
+	margin: 0;
+	background: transparent;
+	/*border: 1px solid;*/
+}
+
+nav[class*="nav-"] .paginas form{
+	margin: 0;
+	position: relative;
+	position: relative;
+}
+
+nav[class*="nav-"] .paginas form input{
+	width: 280px;
+	height: 26px;
+	font-size: .7rem;
+	/*border-color: transparent;*/
+	padding-left: 40px;
+	/*border-bottom: 1px solid;*/
+	/*background: silver;*/
+}
+
+nav[class*="nav-"] .paginas form input::placeholder{
+	font-size: .8rem;
+	font-style: italic;
+}
+
+nav[class*="nav-"] .paginas form button{
+	padding: 0;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background: transparent;
+	border-style: solid;
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+
+nav[class*="nav-"] .paginas form button::before{
+	content: '';
+	display: block;
+	width: 0px;
+	height: 5px;
+	border-left: 1px solid;
+	border-color: inherit;
+	position: absolute;
+	top: 9px;
+	left: -1px;
+	transform: rotate(45deg);
+}
+
+
+
+/*Barras de Navegacao*/
+
+nav.nav-1{
+	padding: 0px 20%;
+}
+
+nav.nav-2{
+	padding: 0px 20%;
+}
+
+nav.nav-3{
+	padding: 0px 20%;
+}
+
+nav.nav-4{
+	padding: 0px 20%;
+}
+
+nav.nav-5{
+	padding: 0px 15%;
+}
+
+nav.nav-6{
+	padding: 0px 20%;
+}
+
+nav.nav-7{
+	padding: 0px 10%;
+}
+
+nav.nav-8{
+	padding: 0px 10%;
+}
+
+nav.nav-9{
+	padding: 0px 15%;
+}
+
+nav.nav-9 .paginas .pagina .arco1{
+	height: 24px;
+	width: 24px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0;
+}
+
+nav.nav-9 .paginas .pagina .arco1::before{
+	content: '';
+	width: 100%;
+	height: 0;
+	border-top: 2px solid;
+	color: inherit;
+	border-top-color: inherit;
+	display: block;
+}
+
+nav.nav-9 .paginas .pp{
+	margin-right: 20px;
+	margin-left: 5px;
+}
+
+@media(max-width: 1170px){
+	nav[class*='nav-']{
+		padding: 0 10%;
+	}
+
+	nav[class*='nav-7']{
+		padding: 0 5%;
+	}
+}
+
+
+@media(max-width: 1080px){
+	nav[class*='nav-']{
+		padding: 0 5%;
+	}
+
+	nav[class*='nav-7'] .inicio .logo{
+		display: none;
+	}
+}
+
+@media(max-width: 990px){
+	nav[class*='nav-']{
+		padding: 0 5%;
+	}
+
+	/*nav-5*/
+
+	nav[class*="nav-5"] form{
+		display: none;
+		width: 0px;
+	}
+
+}
+
+@media(max-width: 720px){
+	nav[class*='nav-']{
+		padding: 0 1rem;
+	}
+
+
+	nav[class*="nav-5"] .paginas .pagina:hover .balao-menu,
+	nav[class*="nav-5"] .paginas .pagina:focus .balao-menu,
+	nav[class*="nav-5"] .paginas .pagina > a:focus ~ .balao-menu,
+	nav[class*="nav-5"] .paginas .pagina .balao-menu:focus,
+	nav[class*="nav-5"] .paginas .pagina .balao-menu:hover{
+		/*transform: translateX(-%) !important;*/
+		/*left: 0;*/
+	}
+
+	/*nav-4*/
+
+	nav[class*="nav-"] form{
+		display: none;
+		width: 0px;
+	}
+}
+
+
+
+@media(max-width: 630px){
+	nav[class*='nav-']{
+		padding: 0 1rem;
+	}
+
+	nav[class*="nav-"] .inicio .logo{
+		background: #444;
+		display: none;
+	}
+
+	nav[class*="nav-6"] .inicio .logo{
+		display: flex;
+	}
+
+	nav[class*="nav-6"] .inicio{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 0;
+		width: 100%;
+		position: static;
+	}
+
+	nav[class*="nav-5"] .pp{
+		display: none;
+	}
+
+	nav[class*="nav-5"] form,
+	nav[class*="nav-4"] form{
+		display: block;
+		width: 100%;
+		margin: 0px 1rem;
+	}
+
+	nav[class*="nav-4"] form{
+		width: 100%;
+	}
+
+	nav[class*="nav-4"] .fim{
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	nav[class*="nav-4"] .fim .paginas{
+		width: 92.5%;
+	}
+
+	nav[class*="nav-5"] .meio{
+		width: 70%;
+	}
+
+	nav[class*="nav-"] .meio .paginas{
+		width: 100%;
+	}
+
+	nav[class*="nav-"] .meio form input{
+		width: 100%;
+	}
+
+
+	nav[class*='nav-'] .botao-paginas{
+		height: 18px;
+		width: 24px;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	nav[class*='nav-'] .botao-paginas::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 0;
+		border-top: inherit;
+		border-color: inherit !important;
+		color: inherit;
+		left: auto;
+	}
+
+	nav[class*='nav-'] .botao-paginas:focus ~ .paginas,
+	nav[class*='nav-'] .botao-paginas:hover ~ .paginas,
+	nav[class*='nav-'] .botao-paginas:active ~ .paginas,
+	nav[class*='nav-'] .botao-paginas ~ .paginas:focus,
+	nav[class*='nav-'] .botao-paginas ~ .paginas:hover,
+	nav[class*='nav-'] .botao-paginas ~ .paginas:active{
+		padding: 2rem 1rem;
+		height: auto;
+		opacity: 1;
+		overflow: visible;
+	}
+
+	nav[class*='nav-'] .botao-paginas ~ .paginas{
+		position: absolute;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		background: white;
+		box-shadow: 0 0 10px #eee;
+		top: calc(10vh + 1rem);
+		left: 1rem;
+		height: 0;
+		width: calc(100vw - 2rem);
+		overflow: hidden;
+		transition: 1s;
+		opacity: 0;
+	}
+
+	nav[class*='nav-5'] .botao-paginas ~ .paginas,
+	nav[class*='nav-6'] .botao-paginas ~ .paginas{
+		transform: translateX(-9.5%);
+	}
+
+	nav[class*='nav-5'] .botao-paginas.x ~ .paginas{
+		transform: translateX(0%);
+	}
+
+	nav[class*='nav-'].escuro .botao-paginas ~ .paginas{
+		background: #444;
+	}
+
+	nav[class*='nav-'] .botao-paginas ~ .paginas .pagina{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		width: 100%;
+		left: 1rem;
+	}
+
+	nav[class*='nav-'] .paginas .pagina{
+		border-radius: inherit;
+	}
+
+	nav[class*='nav-'] .botao-paginas ~ .paginas .pagina a{
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	nav[class*='nav-'] .botao-paginas ~ .paginas .pagina + .pagina{
+		margin-top: 20px;
+	}
+
+	nav[class*='nav-'] .paginas .click{
+		margin-bottom: 0;
+		margin-top: 20px;
+		margin-left: .5rem;
+	}
+
+	nav[class*="nav-"] .paginas .pagina:hover .balao-menu,
+	nav[class*="nav-"] .paginas .pagina:focus .balao-menu,
+	nav[class*="nav-"] .paginas .pagina > a:focus ~ .balao-menu,
+	nav[class*="nav-"] .paginas .pagina .balao-menu:focus,
+	nav[class*="nav-"] .paginas .pagina .balao-menu:hover{
+		height: auto;
+		transform: translateX(-10%);
+		z-index: 10;
+		left: 1rem;
+		top: 6vh;
+		padding: 2rem 1rem;
+		border-radius: inherit;
+	}
+
+	nav[class*="nav-"] .paginas .pagina > .arco:focus ~ .balao-menu,
+	nav[class*="nav-"] .paginas .pagina > .arco:hover ~ .balao-menu,
+	nav[class*="nav-"] .paginas .pagina > .arco ~ .balao-menu:hover,
+	nav[class*="nav-"] .paginas .pagina > .arco ~ .balao-menu:focus{
+		transform: translateX(-95%);
+		top: 3.5rem;
+	}
+
+	nav[class*="nav-"] .paginas .pagina > .arco ~ .balao-menu a{
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	nav[class*="nav-"] .paginas .pagina .balao-menu{
+		left: 1rem;
+		width: calc(100vw - 2rem);
+	}
+
+	nav[class*="nav-"] .paginas .pagina .balao-menu a + a{
+		margin-top: 20px;
+	}
+
+
+	/*nav-3*/
+
+	nav[class*="nav-3"] .botao-paginas:focus ~ .paginas,
+	nav[class*="nav-3"] .botao-paginas:hover ~ .paginas,
+	nav[class*="nav-3"] .botao-paginas:active ~ .paginas,
+	nav[class*="nav-3"] .botao-paginas ~ .paginas:focus,
+	nav[class*="nav-3"] .botao-paginas ~ .paginas:hover,
+	nav[class*="nav-3"] .botao-paginas ~ .paginas:active{
+		height: auto;
+		opacity: 1;
+		overflow: visible;
+	}
+
+	nav[class*="nav-3"] .botao-paginas ~ .paginas{
+		position: absolute;
+		/*right: 1rem;*/
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		background: white;
+		box-shadow: 0 0 10px #eee;
+		top: calc(10vh + 1rem);
+		left: 1rem;
+		height: 0;
+		width: calc(100vw - 2rem);
+		overflow: hidden;
+		transition: 1s;
+		opacity: 0;
+		/*max-width: calc(100vh - 2rem);*/
+	}
+
+	nav[class*="nav-"] .botao-paginas.x ~ .paginas.x{
+		/*left: 1rem !important;*/
+		margin-left: 0 !important;
+	}
+
+	nav[class*="nav-3"] .botao-paginas.x ~ .paginas.x1{
+		
+	}
+
+	nav[class*="nav-"] .botao-paginas.x ~ .paginas.x .pagina .balao-menu{
+		left: 1rem;
+		border-radius: inherit;
+	}
+
+	nav[class*="nav-3"] .botao-paginas.x:focus ~ .paginas.x1,
+	nav[class*="nav-3"] .botao-paginas.x:hover ~ .paginas.x1,
+	nav[class*="nav-3"] .botao-paginas.x:active ~ .paginas.x1{
+		padding: 0;
+		height: 0;
+		overflow: hidden;
+	}
+
+	nav[class*="nav-3"].escuro .botao-paginas ~ .paginas{
+		background: #444;
+	}
+	
+
+	nav[class*="nav-7"]{
+		padding: 0;
+	}
+
+	nav[class*="nav-7"] .inicio{
+		display: none;
+	}
+
+	nav[class*="nav-7"] .perfil{
+		width: 100%;
+	}
+
+	nav[class*="nav-7"] .perfil .pagina:nth-child(3){
+		position: absolute;
+		right: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Checkboxes*/
+
+[class*="checkbox-"]{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0;
+}
+
+
+[class*="checkbox-"] input{
+	display: none;
+}
+
+[class*="checkbox-"] input ~ label{
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: white;
+	position: relative;
+	transition: .5s;
+	border-radius: inherit;
+	border: 1px solid silver;
+}
+
+[class*="radio-"] input ~ label{
+	height: 10px;
+	width: 10px;
+	border-radius: inherit;
+}
+
+[class*="checkbox-"] input:checked ~ label{
+	border-color: inherit;
+}
+
+
+
+
+/*individuais*/
+
+
+
+.checkbox-1 input ~ label{
+	/*border: 1px solid;*/
+}
+
+.checkbox-1 input ~ label::after,
+.checkbox-2 input ~ label::after,
+.checkbox-2.x input ~ label::before{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 5px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	transform: rotate(0deg) scale(0);
+	border-color: inherit;
+	transition: .5s;
+}
+
+.checkbox-1.x input:checked ~ label{
+	background: inherit;
+}
+
+.checkbox-1.x input ~ label::after{
+	border-color: white;
+}
+
+.checkbox-1 input:checked ~ label::after,
+.checkbox-2.x input:checked ~ label::after{
+	transform: rotate(135deg) scale(1);
+}
+
+
+.checkbox-2{
+	padding: 0 0 1px 0;
+}
+
+.checkbox-2 input ~ label{
+	width: 14px;
+	border: none;
+	border-bottom: 1px solid silver;
+}
+
+.checkbox-2.x input ~ label{
+	width: 16px;
+}
+
+.checkbox-2 input ~ label::after,
+.checkbox-2.x input ~ label::before{
+	width: 14px;
+	height: 0;
+	transform: none;
+	top: 50%;
+	left: 0;
+	border-color: silver;
+	/*transform: translateY(-50%);*/
+}
+
+.checkbox-2.x input ~ label::before{
+	width: 16px;
+}
+
+.checkbox-2 input:checked ~ label::after,
+.checkbox-2.x input:checked ~ label::before{
+	width: 12px;
+	height: 6px;
+	/*transform: none;*/
+	top: 1px;
+	left: 1px;
+	transform: rotate(135deg) scale(1);
+	border-color: inherit;
+}
+
+.checkbox-2.x input:checked ~ label::after{
+	left: 0;
+	/*width: 10px;*/
+}
+
+.checkbox-2.x input:checked ~ label::before{
+	left: 4px;
+	/*width: 10px;*/
+}
+
+
+
+/*checkbox-3*/
+
+.checkbox-3 input ~ label{
+}
+
+.checkbox-3 input ~ label::after{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 6px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	box-shadow: inset 2px 2px 0 1px white,
+				0px -1px 0 1px white;
+	transform: rotate(0deg) scale(0);
+	border-color: inherit;
+	transition: .5s;
+}
+
+.checkbox-3 input:checked ~ label::after{
+	transform: rotate(135deg) scale(1);
+}
+
+
+
+/*checkbox-4*/
+
+.checkbox-4 input ~ label::after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 5px solid;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	transform: scale(0);
+	border-color: inherit;
+	transition: .5s;
+}
+
+.checkbox-4.x input ~ label::after{
+	border: 3px double;
+	border-color: inherit;
+}
+
+.checkbox-4 input:checked ~ label::after{
+	transform: scale(1);
+}
+
+/*checkbox-5*/
+
+.checkbox-5 input ~ label{
+	width: 14px;
+	height: 14px;
+}
+
+.checkbox-5 input ~ label::after,
+.checkbox-5 input ~ label::before{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 1px;
+	border: 1px solid;
+	transform: rotate(0deg) scale(0);
+	position: absolute;
+	top: 5px;
+	left: 1px;
+	border-color: inherit;
+	border-radius: 100%;
+	transition: .5s transform;
+	/*box-shadow: 0 0 0 1px white;*/
+}
+
+.checkbox-5.x input ~ label::after,
+.checkbox-5.x input ~ label::before{
+	left: 0px;
+	width: 12px;
+}
+
+.checkbox-5 input ~ label::before{
+	transform: rotate(90deg) scale(0);
+}
+
+.checkbox-5 input:checked ~ label::after{
+	transform: rotate(0deg) scale(1);
+}
+
+.checkbox-5 input:checked ~ label::before{
+	transform: rotate(90deg) scale(1);
+}
+
+
+.checkbox-5.x input:checked ~ label::after{
+	transform: rotate(-45deg) scale(1);
+}
+
+.checkbox-5.x input:checked ~ label::before{
+	transform: rotate(45deg) scale(1);
+}
+
+
+
+
+
+
+
+
+/*radios*/
+
+[class*="radio-"]{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	/*background: silver;*/
+	padding: 0px;
+	margin: 0;
+	border-radius: 100%;
+}
+
+[class*="radio-"] input{
+	display: none;
+}
+
+[class*="radio-"] input ~ label{
+	display: block;
+	background: white;
+	position: relative;
+	/*transition: .5s;*/
+	border: 1px solid silver;
+	height: 12px;
+	width: 12px;
+	border-radius: inherit;
+}
+
+[class*="radio-"] input:checked ~ label{
+	border-color: inherit;
+}
+
+
+/*radio-1*/
+
+
+.radio-1 input ~ label::after{
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 3px solid;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	transform: scale(0);
+	border-radius: inherit;
+	transition: .5s transform;
+}
+
+.radio-1.x input ~ label::after{
+	border: 1px solid;
+	/*width: 8px;
+	height: 8px;
+	top: 1px;
+	left: 1px;*/
+}
+
+.radio-1 input:checked ~ label::after{
+	border-color: inherit;
+	transform: scale(1);
+}
+
+/*radio-2*/
+
+.radio-2 input ~ label{
+	transition: .5s;
+}
+
+.radio-2 input ~ label::after,
+.radio-2.x input ~ label::before{
+	transition: .5s;
+}
+
+.radio-2 input ~ label::after,
+.radio-2.x input ~ label::before{
+	transform: scale(0);
+	content: '';
+	display: block;
+	width: 6px;
+	height: 1px;
+	border: 1px solid;
+	position: absolute;
+	top: 4px;
+	left: 2px;
+	border-color: inherit;
+	border-radius: inherit;
+	transition: .5s transform;
+	/*border-radius: 0;*/
+}
+
+.radio-2.x input ~ label::before{
+	transform: scale(0);
+	content: '';
+	display: block;
+	width: 1px;
+	height: 6px;
+	border: 1px solid;
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	border-color: inherit;
+}
+
+.radio-2 input:checked ~ label::after,
+.radio-2.x input:checked ~ label::before{
+	transform: scale(1);
+}
+
+
+/*radio-3*/
+
+.radio-3 input ~ label::after{
+	content: '';
+	display: block;
+	width: 8px;
+	height: 4px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	transform: rotate(135deg) scale(0);
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	border-color: inherit;
+	border-radius: inherit;
+	transition: .5s transform;
+	border-radius: 0;
+}
+
+.radio-3 input:checked ~ label::after{
+	transform: rotate(135deg) scale(1);
+}
+
+.radio-3.x input:checked ~ label{
+	background: inherit;
+}
+
+.radio-3.x input ~ label::after{
+	border-color: white;
+}
+
+
+
+
+/*radio-4*/
+
+.radio-4 input ~ label::after{
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	transform: rotate(45deg) scale(0);
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	border-color: inherit;
+	border-radius: inherit;
+	transition: .5s transform;
+	border-radius: 0;
+}
+
+.radio-4 input:checked ~ label::after{
+	transform: rotate(45deg) scale(1);
+}
+
+.radio-4.x input:checked ~ label{
+	background: inherit;
+}
+
+.radio-4.x input:checked ~ label::after{
+	border-color: white;
+}
+
+/*radio-5*/
+
+.radio-5 input ~ label::after,
+.radio-5 input ~ label::before{
+	content: '';
+	display: block;
+	width: 18px;
+	height: 1px;
+	border: 1px solid;
+	transform: rotate(0deg) scale(0);
+	position: absolute;
+	top: 4px;
+	left: -4px;
+	border-color: inherit;
+	border-radius: inherit;
+	transition: .5s transform;
+	/*box-shadow: 0 0 0 1px white;*/
+}
+
+.radio-5 input ~ label::before{
+	transform: rotate(90deg) scale(0);
+}
+
+.radio-5 input:checked ~ label::before{
+	transform: rotate(90deg) scale(1);
+}
+
+.radio-5 input:checked ~ label::after{
+	transform: rotate(0deg) scale(1);
+}
+
+
+.radio-5.x input:checked ~ label::before{
+	transform: rotate(45deg) scale(1);
+}
+
+.radio-5.x input:checked ~ label::after{
+	transform: rotate(-45deg) scale(1);
+}
+
+
+
+
+
+/*interruptor*/
+
+[class*="interruptor-"]{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	vertical-align: middle;
+}
+
+[class*="interruptor-"] input{
+	display: none;
+}
+
+[class*="interruptor-"] input ~ label{
+	display: block;
+	background: white;
+	position: relative;
+	/*transition: .5s;*/
+}
+
+[class*="interruptor-"] input ~ label{
+	border-radius: inherit;
+}
+
+
+/*interruptor-1*/
+
+
+.interruptor-1 input ~ label{
+	width: 32px;
+	height: 10px;
+	background: silver;
+	position: relative;
+	box-shadow: inset 0 0 0 20px white;
+	border: 1px solid;
+	border-color: silver;
+	transition: .5s;
+}
+
+.interruptor-1.x input ~ label{
+	width: 30px;
+	box-shadow: 0 0 2px grey;
+	border: none;
+	background: white;
+	background: silver;
+}
+
+.interruptor-1 input ~ label::after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	border-radius: inherit;
+	background: silver;
+	top: 50%;
+	transform: translateY(-50%) translateX(-2px);
+	transition: .5s transform;
+	border: 2px solid white;
+	box-sizing: content-box;
+}
+
+.interruptor-1.x input ~ label::after{
+	background: white;
+	border: none;
+	height: 19px;
+	width: 19px;
+	box-shadow: 0 0 5px silver;
+	transform: translateY(-50%) translateX(-1px);
+	transition: .5s;
+}
+
+.interruptor-1 input:checked ~ label{
+	box-shadow: none;
+	border-color: inherit;
+	background: inherit;
+}
+
+.interruptor-1.x input:checked ~ label{
+	background: inherit;
+}
+
+.interruptor-1 input:checked ~ label::after{
+	transform: translateY(-50%) translateX(2px);
+	right: 0;
+	background: inherit;
+}
+
+.interruptor-1.x input:checked ~ label::after{
+	transform: translateY(-50%) translateX(1px);
+	background: white;
+}
+
+
+/*interruptor-2*/
+
+.interruptor-2 input ~ label{
+	width: 34px;
+	height: 18px;
+	background: silver;
+	position: relative;
+	box-shadow: inset 0 0 0 20px white;
+	border: 1px solid;
+	border-color: silver;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.interruptor-2 input ~ label::after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: inherit;
+	background: silver;
+	top: 0px;
+	transform: translateX(0px);
+	transition: .5s transform;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+.interruptor-2.x input ~ label::after{
+	border-width: 3px;
+}
+
+.interruptor-2 input:checked ~ label{
+	background: inherit;
+	box-shadow: none;
+	border-color: inherit;
+}
+
+.interruptor-2.x input:checked ~ label{
+	border-color: inherit !important;
+	color: inherit;
+}
+
+.interruptor-2 input:checked ~ label::after{
+	background: white;
+	border-color: inherit;
+	right: 1px;
+	border-width: 0px;
+	transform: translateX(1px);
+}
+
+.interruptor-2.x input:checked ~ label::after{
+	border: 3px solid white;
+	background: inherit;
+}
+
+
+
+/*interruptor-3*/
+
+.interruptor-3{
+	background: ;
+}
+
+.interruptor-3 input ~ label{
+	width: 18px;
+	height: 16px;
+	background: silver;
+	position: relative;
+	box-shadow: inset 0 0 0 20px white;
+	border: 1px solid;
+	border-color: silver;
+	transition: .5s;
+}
+
+.interruptor-3.x input ~ label{
+	border: 3px double;
+	width: 20px;
+	height: 18px;
+	border-color: silver;
+	background: white;
+}
+
+.interruptor-3 input:checked ~ label{
+	border-color: inherit;
+}
+
+.interruptor-3 input ~ label::after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 8px;
+	width: 0px;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: inherit;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 0 3px white;
+	/*transition: .5s;*/
+}
+
+.interruptor-3.x input ~ label::after{
+	border: 3px double;
+	background: white;
+	border-color: silver;
+	box-shadow: 0 0 0 2px white;
+	height: 10px;
+}
+
+.interruptor-3 input:checked ~ label::after{
+	border-color: inherit;
+}
+
+
+
+
+/*interruptor-4*/
+
+.interruptor-4 input ~ label{
+	width: 100%;
+	height: 100%;
+	background: silver;
+	position: relative;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.5),
+				inset 0 0 0 50px white;
+	border: 0px solid;
+	border-color: silver;
+	transition: .5s;
+}
+
+.interruptor-4.x input ~ label{
+	box-shadow: inset 0 0 0 50px silver;
+}
+
+.interruptor-4 input:checked ~ label{
+	background: inherit;
+	box-shadow: inset 0 0 0 50px rgba(255,255,255,1);
+	border: 1px solid;
+	border-color: inherit;
+}
+
+.interruptor-4.x input:checked ~ label{
+	box-shadow: none;
+	background: inherit;
+}
+
+
+.interruptor-4 input ~ label::after{
+	content: attr(detalhes);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 60%;
+	font-weight: bolder;
+	line-height: 0;
+	padding: 0;
+	position: absolute;
+	height: calc(100% - 2px);
+	width: 50%;
+	border-radius: inherit;
+	background: inherit;
+	transform: translate(1px, 1px);
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	transition: .5s;
+}
+
+.interruptor-4.x input ~ label::after{
+	background: white;
+}
+
+.interruptor-4 input:checked ~ label::after{
+	content: attr(mais-detalhes);
+	left: 50%;
+	transform: translate(-1.5px, 1px);
+	color: white;
+}
+
+.interruptor-4.x input:checked ~ label::after{
+	color: black;
+	border: none;
+	height: calc(100% - 0px);
+	top: -1px;
+	transform: translate(0px, 1px);
+}
+
+
+
+/*interruptor-5*/
+
+.interruptor-5{
+	/*transition: .5s;*/
+}
+
+
+.interruptor-5 input ~ label{
+	width: 20px;
+	height: 20px;
+	background: silver;
+	position: relative;
+	box-shadow: inset 0 0 0 20px white;
+	border: 1px solid;
+	border-color: silver;
+	transition: .5s;
+}
+
+.interruptor-5 input:checked ~ label{
+	transition: .5s;
+	background: inherit;
+	border-color: inherit;
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.25),
+				0 0 0 4px rgba(255,255,255,0.25),
+				0 0 0 6px rgba(255,255,255,0.25);
+}
+
+.interruptor-5.x input:checked ~ label{
+	transition: .5s;
+	background: inherit;
+	border-color: inherit;
+	box-shadow: 0 0 0 4px rgba(255,255,255,0.25),
+				0 0 0 8px rgba(255,255,255,0.25),
+				0 0 0 12px rgba(255,255,255,0.25);
+}
+
+
+.interruptor-5 input ~ label::after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: calc(100% - 0px);
+	width: calc(100% - 0px);
+	border-radius: inherit;
+	border: none;
+	top: 0px;
+	left: 0px;
+	background: inherit;
+	transform: scale(1);
+	box-shadow: inset 0 0 0 2px white;
+	transition: .5s;
+	/*background-image: linear-gradient(90deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(112.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(135deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(157.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(180deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(202.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(225deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(247.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(270deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(292.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(315deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(337.5deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%),
+					  linear-gradient(360deg, transparent 0px, transparent 50%, red 50%, red 52%, transparent 52%, transparent 100%);*/
+	/*background-image: conic-gradient(var(--ver), var(--rosa), var(--roxo), var(--vio), var(--azul));*/
+}
+
+.interruptor-5 input ~ label::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: calc(100% + 14px);
+	height: calc(100% + 14px);
+	border-radius: inherit;
+	transform: translate(-50%, -50%) scale(0);
+	background: inherit;
+	transition: .5s;
+	z-index: -1;
+}
+
+.interruptor-5.x input ~ label::before{
+	width: calc(100% + 24px);
+	height: calc(100% + 24px);
+}
+
+.interruptor-5 input:checked ~ label::before{
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.interruptor-5 input:checked ~ label::after{
+	transform: scale(1);
+	/*box-shadow: inset 0 0 0 2px white,
+				0 0 0 2px rgba(255,255,255,0.2),
+				0 0 0 4px rgba(255,255,255,0.2),
+				0 0 0 6px rgba(255,255,255,0.2),
+				0 0 0 8px rgba(255,255,255,0.2);*/
+}
+
+
+
+
+
+/*files*/
+
+[class*="file-"]{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	/*background: silver;*/
+	/*padding: 1px;*/
+	margin: 0;
+	position: relative;
+}
+
+[class*="file-"] input{
+	display: none;
+	border-radius: inherit;
+	position: absolute;
+	width: calc(100% - 8px) !important;
+	height: calc(100% - 8px) !important;
+	max-height: 100%;
+	opacity: 0;
+	display: block;
+	z-index: 1;
+	top: 3px;
+	left: 3px;
+	transition: 0s;
+}
+
+[class*="file-"] input ~ label{
+	display: block;
+	background: white;
+	position: relative;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	/*transition: .5s;*/
+}
+
+[class*="file-"] input ~ label{
+	border-radius: inherit;
+}
+
+
+
+/*file-1*/
+
+.file-1 input ~ label{
+	background: inherit;
+	border-color: inherit !important;
+	border-bottom: 1px solid;
+	box-shadow: inset 0 0 0 50px white;
+}
+
+.file-1 input:valid ~ label::after{
+	content: attr(extra-detalhes);
+	color: inherit;
+	border-radius: inherit;
+}
+
+.file-1 input ~ label::before{
+	content: attr(detalhes);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	height: calc(100% - 2px);
+	width: 110px;
+	background: inherit;
+	font-weight: bolder;
+	color: white;
+	text-transform: uppercase;
+	font-size: 80%;
+	padding: 0px 1rem;
+	transition: .5s;
+	border-radius: inherit;
+	z-index: 2;
+	box-shadow: inset 0 0 0 50px rgba(0,0,0,0.0);
+}
+
+.file-1 input ~ label:hover::before{
+	box-shadow: inset 0 0 0 50px rgba(0,0,0,0.4);
+}
+
+.file-1.x input ~ label::before{
+	justify-content: flex-start;
+	top: 1px;
+	height: 100%;
+	width: 100px;
+	background: transparent;
+	padding: 0px;
+	color: inherit;
+}
+
+.file-1.x input ~ label:hover::before{
+	box-shadow: none;
+}
+
+.file-1 input ~ label:active::before{
+	transform: scale(.9);
+}
+
+.file-1 input ~ label::after{
+	content: attr(mais-detalhes)'...';
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: absolute;
+	left: 120px;
+	color: black;
+	text-transform: lowercase;
+	font-variant: normal;
+	/*font-size: 100%;*/
+}
+
+.file-1.x input:valid ~ label::after{
+	font-size: 90%;
+}
+
+
+
+/*file-2*/
+
+.file-2 input ~ label{
+	background: inherit;
+	border-color: inherit !important;
+	border: 1px solid;
+	box-shadow: inset 0 0 0 50px white;
+}
+
+.file-2 input ~ label::before{
+	content: attr(detalhes);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: calc(100% - 0px);
+	width: 110px;
+	background: inherit;
+	font-weight: bolder;
+	color: white;
+	text-transform: uppercase;
+	font-size: 80%;
+	padding: 0px 1rem;
+	transition: .5s;
+	border-radius: inherit;
+	z-index: 2;
+	box-shadow: inset 0 0 0 50px rgba(0,0,0,0.0);
+}
+
+.file-2.x input ~ label::before{
+	top: 2px;
+	left: 2px;
+	height: calc(100% - 4px);
+}
+
+
+.file-2 input ~ label:hover::before{
+	box-shadow: inset 0 0 0 50px rgba(0,0,0,0.4);
+}
+
+.file-2 input ~ label:active::before{
+	transform: scale(.9);
+}
+
+
+.file-2 input ~ label::after{
+	content: attr(mais-detalhes)'...';
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: absolute;
+	left: 120px;
+	color: black;
+	text-transform: lowercase;
+	font-variant: normal;
+}
+
+.file-2 input:valid ~ label::after{
+	content: attr(extra-detalhes);
+	color: inherit;
+	font-variant: normal;
+}
+
+.file-2 input:invalid ~ label::after{
+	/*background: red;*/
+}
+
+
+
+/*file-3*/
+
+.file-3{
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.file-3:active{
+	transform: scale(.98);
+}
+
+.file-3 input{
+	position: absolute;
+	width: calc(100% - 8px) !important;
+	height: calc(100% - 8px) !important;
+	max-height: 100%;
+	opacity: 0;
+	display: block;
+	z-index: 5;
+	top: 3px;
+	left: 3px;
+	transition: 0s;
+}
+
+.file-3 input:focus ~ label,
+.file-3 input:active ~ label,
+.file-3 input:hover ~ label,
+.file-3 input:valid ~ label{
+	background: inherit;
+	box-shadow: none;
+	box-shadow: inset 0 0 0 100px rgba(255,255,255,0.95);
+}
+
+.file-3 input ~ label{
+	background: inherit;
+	border: 1px dashed white;
+	/*border-color: inherit !important;*/
+	box-shadow: inset 0 0 0 100px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: .5s;
+}
+
+.file-3.x input ~ label{
+	flex-direction: row;
+}
+
+@media (max-width: 630px){
+	.file-3.x input ~ label{
+		flex-direction: column;
+	}
+
+	.file-3.x input ~ label::before{
+		margin-bottom: 5px;
+	}
+
+	.file-3.x input:valid ~ label::before{
+		margin-bottom: 0;
+	}
+}
+
+.file-3 input ~ label::before,
+.file-3 input ~ label::after{
+	content: attr(detalhes);
+	color: black;
+	display: block;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.file-3 input ~ label::before{
+	/*text-shadow: 0 0 0 1px red;*/
+}
+
+.file-3.x input ~ label::before{
+	font-weight: normal;
+	font-size: 100%;
+	text-transform: none;
+	font-variant: normal;
+	margin-right: 5px;
+}
+
+.file-3.x input:valid ~ label::before{
+	content: attr(extra-detalhes);
+	color: inherit;
+}
+
+.file-3 input ~ label::after{
+	content: attr(mais-detalhes)'...';
+	font-variant: normal;
+	text-transform: none;
+	font-weight: normal;
+	color: #aaa;
+	margin-top: 5px;
+	font-size: 100%;
+}
+
+.file-3.x input ~ label::after{
+	content: attr(mais-detalhes);
+	margin-top: 0;
+	color: inherit;
+	height: 26px;
+	/*background: inherit;*/
+	padding: 0px 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px dashed;
+	/*border-color: inherit;*/
+	font-weight: bolder;
+	z-index: 6;
+	transition: .5s;
+	border-radius: inherit;
+}
+
+.file-3.x input ~ label:hover::after{
+	background: inherit;
+	color: white;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+.file-3.x input ~ label:active::after{
+	transform: scale(1.1);
+}
+
+.file-3 input:valid ~ label::after{
+	content: attr(extra-detalhes);
+	color: inherit;
+}
+
+.file-3.x input:valid ~ label::after{
+	display: none;
+}
+
+
+
+/*file-4*/
+
+.file-4{
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	transition: .5s;
+	vertical-align: middle;
+}
+
+.file-4 input{
+	
+}
+
+.file-4 input ~ label{
+	background: silver;
+	box-shadow: inset 0 0 0 4px white;
+	border: 1px solid;
+	border-color: silver;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: inherit;
+	overflow: hidden;
+}
+
+.file-4 input:valid ~ label{
+	background: inherit;
+	border-color: inherit;
+}
+
+.file-4 input ~ label::before{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: silver;
+	transform: rotate(45deg);
+	background-image: linear-gradient(-45deg, transparent 0%, transparent 50%, white 50%, white 100%);
+	border-radius: 0px 5px;
+	transition: .5s;
+}
+
+.file-4.x input ~ label::before{
+	/*margin-top: 20%;*/
+	position: relative;
+	top: 10%;
+	width: 40%;
+	height: 40%;
+}
+
+.file-4 input:valid ~ label::before,
+.file-4.x input:valid ~ label::before{
+	border-radius: inherit;
+	position: absolute;
+	background-image: none;
+	border: 2px solid white;
+	width: calc(100% - 32%);
+	height: calc(100% - 32%);
+	background: inherit;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*margin: 0;*/
+}
+
+.file-4 input ~ label::after{
+	content: '';
+	position: absolute;
+	display: block;
+	height:  calc(100% - 70%);
+	width: 4px;
+	background: white;
+	top: 55%;
+	left: 50%;
+	border-radius: inherit;
+	transition: .5s;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.file-4.x input ~ label::after{
+	transform: scale(0);
+}
+
+.file-4 input:valid ~ label::after,
+.file-4.x input:valid ~ label::after{
+	display: block;
+	width: 40%;
+	height: 20%;
+	transform: rotate(-45deg) translateY(-50%) translateX(-50%) scale(1);
+	border-radius: 0;
+	background: inherit;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	top: 30%;
+}
+
+
+
+/*file-5*/
+
+.file-5{
+	transition: .5s;
+}
+
+.file-5:active{
+	transform: scale(.9);
+}
+
+.file-5 input ~ label{
+	background: inherit;
+	border: 1px solid;
+	border-color: silver;
+	box-shadow: inset 0 0 0 50px white;
+	transition: .5s;
+	font-variant: normal;
+}
+
+.file-5.x input ~ label{
+	background: silver;
+	box-shadow: inset 0 0 0 50px rgba(255,255,255,0.0);
+}
+
+.file-5.x input:hover ~ label{
+	box-shadow: inset 0 0 0 50px rgba(0,0,0,0.4);
+}
+
+.file-5 input:valid ~ label{
+	border-color: inherit;
+	color: inherit;
+}
+
+.file-5.x input:valid ~ label{
+	background: inherit;
+	border-color: inherit;
+	color: white;
+}
+
+.file-5 input ~ label::before{
+	content: attr(detalhes);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transition: .5s;
+}
+
+.file-5 input:valid ~ label::before{
+	content: attr(mais-detalhes);
+	color: inherit;
+	font-weight: bolder;
+	text-transform: capitalize;
+	font-size: 100%;
+}
+
+.file-5.x input:valid ~ label::before{
+	color: white;
+}
+
+
+
+
+
+/*campos/inputs*/
+
+[class*="input-"],
+[class*="select-"],
+[class*="textarea-"]{
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: initial;
+	position: relative;
+	box-shadow: inset 0 0 0 1050px white;
+}
+
+[class*="input-"] input,
+[class*="select-"] select,
+[class*="textarea-"] textarea{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: inherit;
+	max-height: 100%;
+	padding-left: 0;
+	padding-top: 25px;
+	/*line-height: 3;*/
+	/*background: red;*/
+	/*border-radius: inherit;*/
+}
+
+[class*="select-"] select{
+	/*padding-top: 15px;*/
+}
+
+[class*="input-"] label,
+[class*="select-"] label,
+[class*="textarea-"] label{
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	transition: .5s;
+	font-variant: normal;
+	color: #aaa;
+	pointer-events: none;
+	text-transform: none;
+	border-radius: inherit;
+}
+
+[class*="input-"] input ~ label i,
+[class*="select-"] select ~ label i,
+[class*="textarea-"] textarea ~ label i{
+	margin-right: 5px;
+	color: inherit;
+}
+
+/*barra-baixo*/
+
+[class*="input-"] span,
+[class*="select-"] span,
+[class*="textarea-"] span{
+	width: 100%;
+	position: absolute;
+	height: 2px;
+	bottom: 0px;
+	border-color: inherit;
+}
+
+[class*="input-"] span::before,
+[class*="select-"] span::before,
+[class*="textarea-"] span::before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0%;
+	right: 0;
+	border-bottom: 2px solid;
+	border-color: inherit;
+	transform: scale(1);
+	transition: .5s;
+}
+
+[class*="input-"] input:focus ~ span::before,
+[class*="select-"] select:focus ~ span::before,
+[class*="textarea-"] textarea:focus ~ span::before{
+	transform: scale(1);
+	width: 100%;
+	right: auto;
+	left: 0;
+}
+
+[class*="input-"] input:required:invalid:focus ~ span::before,
+[class*="textarea-"] textarea:required:invalid:focus ~ span::before{
+	border-color: red;
+}
+
+[class*="input-"] input:valid ~ span::before,
+[class*="select-"] select:valid ~ span::before,
+[class*="textarea-"] textarea:valid ~ span::before{
+	border-color: inherit;
+	transform: scale(1);
+	width: 100%;
+}
+
+
+[class*="input-"] span::after,
+[class*="textarea-"] span::after{
+	content: attr(detalhes);
+	position: absolute;
+	display: block;
+	font-size: 70%;
+	top: 5px;
+	font-weight: bolder;
+	color: red;
+	transform: scale(1,0);
+	transition: .5s;
+}
+
+
+[class*="input-"] input:not(:placeholder-shown):required:invalid ~ span::after,
+[class*="textarea-"] textarea:not(:placeholder-shown):required:invalid ~ span::after{
+	transform: scale(1,1);
+}
+
+[class*="input-"] input:required:invalid:focus ~ span::after,
+[class*="textarea-"] textarea:required:invalid:focus ~ span::after{
+	transform: scale(1,1);
+}
+
+
+/*Quando Invalidado manter se activo*/
+
+
+[class*="input-"] input:not(:placeholder-shown):invalid ~ label,
+[class*="textarea-"] textarea:not(:placeholder-shown):invalid ~ label{
+	color: red;
+}
+
+[class*="input-"].x input:not(:placeholder-shown):invalid ~ label,
+[class*="textarea-"].x textarea:not(:placeholder-shown):invalid ~ label{
+	background: red;
+	color: white;
+}
+
+[class*="input-"] input:not(:placeholder-shown):invalid,
+[class*="textarea-"] textarea:not(:placeholder-shown):invalid,
+[class*="input-"] input:not(:placeholder-shown):required:invalid,
+[class*="textarea-"] textarea:not(:placeholder-shown):required:invalid{
+	border-color: red;
+}
+
+[class*="input-"] input:not(:placeholder-shown):required:invalid ~ span::before,
+[class*="textarea-"] textarea:not(:placeholder-shown):required:invalid ~ span::before{
+	width: 100%;
+	border-color: red;
+}
+
+/*Campos de data Invalidados*/
+
+[class*="input-"] input[type="date"]:not(:placeholder-shown):required:invalid ~ span::after,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):required:invalid ~ span::after,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):required:invalid ~ span::after,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):required:invalid ~ span::after,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):required:invalid ~ span::after{
+	transform: scale(1,0);
+}
+
+[class*="input-"] input[type="date"]:required:invalid:focus ~ span::after,
+[class*="input-"] input[type="week"]:required:invalid:focus ~ span::after,
+[class*="input-"] input[type="month"]:required:invalid:focus ~ span::after,
+[class*="input-"] input[type="time"]:required:invalid:focus ~ span::after,
+[class*="input-"] input[type="datetime-local"]:required:invalid:focus ~ span::after{
+	transform: scale(1,1);
+}
+
+[class*="input-"] input[type="date"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):invalid ~ label{
+	color: silver;
+}
+
+[class*="input-"].x input[type="date"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"].x input[type="week"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"].x input[type="month"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"].x input[type="time"]:not(:placeholder-shown):invalid ~ label,
+[class*="input-"].x input[type="datetime-local"]:not(:placeholder-shown):invalid ~ label{
+	background: silver;
+	color: white;
+}
+
+[class*="input-"] input[type="date"]:not(:placeholder-shown):invalid,
+[class*="input-"] input[type="date"]:not(:placeholder-shown):required:invalid,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):invalid,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):required:invalid,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):invalid,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):required:invalid,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):invalid,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):required:invalid,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):invalid,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):required:invalid{
+	border-color: silver;
+}
+
+[class*="input-"] input[type="date"]:not(:placeholder-shown):required:invalid ~ span::before,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):required:invalid ~ span::before,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):required:invalid ~ span::before,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):required:invalid ~ span::before,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):required:invalid ~ span::before{
+	width: 0%;
+	border-color: silver;
+}
+
+[class*="input-"] input[type="date"]:required:invalid,
+[class*="input-"] input[type="week"]:required:invalid,
+[class*="input-"] input[type="month"]:required:invalid,
+[class*="input-"] input[type="time"]:required:invalid,
+[class*="input-"] input[type="datetime-local"]:required:invalid{
+	/*padding-bottom: 0;*/
+}
+
+[class*="input-"] input[type="date"]:required:invalid:focus,
+[class*="input-"] input[type="week"]:required:invalid:focus,
+[class*="input-"] input[type="month"]:required:invalid:focus,
+[class*="input-"] input[type="time"]:required:invalid:focus,
+[class*="input-"] input[type="datetime-local"]:required:invalid:focus{
+	border-color: red;
+}
+
+[class*="input-"] input[type="date"]:not(:placeholder-shown):required:invalid:focus ~ span::before,
+[class*="input-"] input[type="week"]:not(:placeholder-shown):required:invalid:focus ~ span::before,
+[class*="input-"] input[type="month"]:not(:placeholder-shown):required:invalid:focus ~ span::before,
+[class*="input-"] input[type="time"]:not(:placeholder-shown):required:invalid:focus ~ span::before,
+[class*="input-"] input[type="datetime-local"]:not(:placeholder-shown):required:invalid:focus ~ span::before{
+	width: 100%;
+	border-color: red;
+}
+
+/*input1 class global*/
+
+[class*="input-"] input.input1:required:invalid:focus,
+[class*="input-"] input.input1:required:invalid:focus,
+[class*="input-"] input.input1:required:invalid:focus,
+[class*="select-"] select.input1:required:invalid:focus,
+[class*="select-"] select.input1:required:invalid:focus,
+[class*="select-"] select.input1:required:invalid:focus,
+[class*="textarea-"] textarea.textarea1:required:invalid:focus{
+	border-color: red;
+}
+
+[class*="input-"] input.input1:valid:focus,
+[class*="input-"] input.input1:valid:focus,
+[class*="input-"] input.input1:valid:focus,
+[class*="select-"] select.input1:valid:focus,
+[class*="select-"] select.input1:valid:focus,
+[class*="select-"] select.input1:valid:focus,
+[class*="select-"] select.input1:valid:focus,
+[class*="textarea-"] textarea.textarea1:valid:focus{
+	border-color: inherit;
+}
+
+
+[class*="input-"] input.input1:not(:placeholder-shown):required:invalid,
+[class*="textarea-"] textarea.textarea1:not(:placeholder-shown):required:invalid{
+	background: white;
+	box-shadow: inset 0 0 5px red;
+	border-color: red;
+}
+
+[class*="input-"].x input.input1:not(:placeholder-shown):invalid ~ label{
+	
+}
+
+
+
+/*input-1*/
+
+
+.input-1 input:required:invalid,
+.input-2 input:required:invalid,
+.input-3 input:required:invalid,
+.input-4 input:required:invalid,
+.input-5 input:required:invalid,
+[class*="textarea-"] textarea:required:invalid{
+	color: red;
+	border-color: silver;
+}
+
+.input-1 input:required:invalid:focus,
+.input-2 input:required:invalid:focus,
+.input-3 input:required:invalid:focus,
+.input-4 input:required:invalid:focus,
+.input-5 input:required:invalid:focus{
+	/*border-color: red;*/
+}
+
+.input-1 input:required:invalid:focus ~ label,
+.input-2 input:required:invalid:focus ~ label,
+.input-3 input:required:invalid:focus ~ label,
+.input-4 input:required:invalid:focus ~ label,
+.input-5 input:required:invalid:focus ~ label,
+[class*="textarea-"] textarea:required:invalid:focus ~ label{
+	color: red;
+}
+
+.input-1.x input:required:invalid:focus ~ label,
+.input-2.x input:required:invalid:focus ~ label,
+.input-3.x input:required:invalid:focus ~ label,
+.input-4.x input:required:invalid:focus ~ label,
+.input-5.x input:required:invalid:focus ~ label,
+[class*="textarea-"].x textarea:required:invalid:focus ~ label{
+	background: red;
+	color: white;
+}
+
+
+.input-1 input:focus ~ label,
+.input-1 input:valid ~ label,
+.input-2 input:focus ~ label,
+.input-2 input:valid ~ label,
+.input-3 input:focus ~ label,
+.input-3 input:valid ~ label,
+.input-4 input:focus ~ label,
+.input-4 input:valid ~ label,
+.input-5 input:focus ~ label,
+.input-5 input:valid ~ label,
+[class*="select-"] select:focus ~ label,
+[class*="select-"] select:valid ~ label{
+	bottom: 70%;
+	font-size: 70%;
+	color: inherit;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.input-1 input:not(:placeholder-shown) ~ label{
+	bottom: 70%;
+}
+
+.input-1.x input:valid ~ label,
+.input-1.x input:focus ~ label,
+.input-2.x input:valid ~ label,
+.input-2.x input:focus ~ label,
+.input-3.x input:valid ~ label,
+.input-3.x input:focus ~ label,
+.input-4.x input:valid ~ label,
+.input-4.x input:focus ~ label,
+.input-5.x input:valid ~ label,
+.input-5.x input:focus ~ label,
+[class*="select-"].x select:focus ~ label,
+[class*="select-"].x select:valid ~ label{
+	padding: 2px 6px;
+	background: inherit;
+	color: white;
+	box-shadow: inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white;
+	text-transform: none;
+}
+
+
+
+.input-1 input:not(:placeholder-shown) ~ label{
+	bottom: 70%;
+	font-size: 70%;
+	color: inherit;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.input-1.x input:not(:placeholder-shown) ~ label{
+	padding: 2px 6px;
+	background: inherit;
+	color: white;
+	box-shadow: inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white;
+	text-transform: none;
+}
+
+
+
+/*input-2*/
+
+.input-2 input ~ label{
+	bottom: 70%;
+	font-size: 70%;
+	color: silver;
+	font-weight: bolder;
+	text-transform: uppercase;
+	pointer-events: auto;
+}
+
+.input-2.x input ~ label{
+	padding: 2px 6px;
+	background: silver;
+	color: black;
+	box-shadow: inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white;
+	text-transform: none;
+}
+
+.input-2 input:valid ~ label{
+	color: inherit;
+}
+
+.input-2.x input:valid ~ label{
+	color: white;
+	background: inherit;
+}
+
+
+/*input-3*/
+
+.input-3 input,
+.select-2 select,
+.textarea-1 textarea{
+	padding-left: .5rem;
+	padding-top: 1rem;
+	border-color: inherit;
+}
+
+.input-3 input ~ label,
+.select-2 select ~ label,
+.textarea-1 textarea ~ label{
+	border-radius: inherit;
+	color: silver;
+	bottom: 100%;
+	transform: translateY(50%);
+	font-size: 70%;
+	font-weight: bolder;
+	padding: 2px 6px;
+	left: 4px;
+	text-transform: uppercase;
+	pointer-events: auto;
+	background: white;
+}
+
+/*Textarea-1 debut*/
+
+.textarea-1 textarea.textarea2{
+	padding-left: 0em !important;
+}
+
+.textarea-1 textarea.textarea2 ~ label{
+	padding-left: 0 !important;
+}
+
+.textarea-1.x textarea.textarea2 ~ label{
+	padding-left: 6px !important;
+}
+
+.textarea-1 textarea.textarea1:required:invalid{
+	background: #eee;
+	border-color: #eee;
+}
+
+.textarea-1 textarea.textarea1:required:invalid:focus,
+.textarea-1 textarea.textarea1:valid:focus{
+	background: white;
+}
+
+.textarea-1 textarea.textarea2 ~ label{
+	left: 0 !important;
+}
+
+.textarea-1 textarea.textarea1 ~ label{
+	border: 1px solid #eee;
+}
+
+.textarea-1 textarea.textarea1 ~ label{
+	border: 1px solid #eee;
+}
+
+.textarea-1 textarea.textarea1:required:valid ~ label{
+	border-color: inherit;
+}
+
+.textarea-1 textarea.textarea1:required:invalid:focus ~ label{
+	border-color: red;
+}
+
+.textarea-1.x textarea ~ label{
+	background: silver;
+	color: white;
+}
+
+.textarea-1.x textarea.textarea1:required:invalid ~ label{
+	background: #eee;
+	color: black;
+}
+
+.textarea-1.x textarea.textarea1:required:invalid ~ label,
+.textarea-1.x textarea.textarea1:required:valid ~ label{
+	border: none;
+}
+
+.textarea-1.x textarea.textarea1:required:invalid:focus ~ label,
+.textarea-1.x textarea.textarea1:required:invalid:not(:placeholder-shown) ~ label{
+	background: red;
+	color: white;
+}
+
+
+
+
+
+.input-3 input:focus ~ label,
+.input-3 input:valid ~ label,
+.select-2 select:focus ~ label,
+.select-2 select:valid ~ label,
+.textarea-1 textarea:focus ~ label,
+.textarea-1 textarea:valid ~ label{
+	bottom: 100%;
+	transform: translateY(50%);
+	font-size: 70%;
+	font-weight: bolder;
+	color: inherit;
+}
+
+.input-3.x input ~ label{
+	background: silver;
+	color: black;
+	text-transform: none;
+	left: 0;
+}
+
+.input-3.x input:focus ~ label,
+.input-3.x input:valid ~ label,
+.textarea-1.x textarea:focus ~ label,
+.textarea-1.x textarea:valid ~ label{
+	background: inherit;
+	color: white;
+	box-shadow: none;
+}
+
+.input-3 input:required:invalid:focus,
+.textarea-1 textarea:required:invalid:focus{
+	border-color: red;
+}
+
+
+
+/*input-4*/
+
+.input-4 input{
+	height: 50%;
+	padding: 1rem .8rem;
+}
+
+
+.input-4 input ~ label{
+	border-radius: inherit;
+	color: silver;
+	bottom: auto;
+	top: 0;
+	font-size: 70%;
+	font-weight: bolder;
+	padding: 0px;
+	background: white;
+	left: 0px;
+	text-transform: uppercase;
+	pointer-events: auto;
+}
+
+.input-4 input:focus ~ label,
+.input-4 input:valid ~ label{
+	/*bottom: 100%;*/
+	bottom: auto;
+	top: 0;
+	/*transform: translateY(50%);*/
+	font-size: 70%;
+	font-weight: bolder;
+	padding: 0px;
+	background: white;
+	color: inherit;
+}
+
+.input-4.x input ~ label{
+	background: silver;
+	color: black;
+	text-transform: none;
+	left: 0;
+	padding: 2px 6px;
+}
+
+.input-4 input:focus,
+.input-4 input:valid{
+	border-color: inherit;
+}
+
+.input-4.x input.input1:focus ~ label,
+.input-4.x input.input1:valid ~ label,
+.textarea-1.x textarea.textarea1:focus ~ label,
+.textarea-1.x textarea.textarea1:valid ~ label{
+	background: inherit;
+	color: white;
+	box-shadow: none;
+}
+
+.input-4 input:required:invalid:focus{
+	border-color: red;
+}
+
+
+
+/*input-5*/
+
+.input-5{
+	/*background: red;*/
+	/*box-shadow: none;*/
+}
+
+.input-5 input,
+.select-3 select{
+	height: 50%;
+	padding: 1rem .8rem;
+	padding-left: 2.2rem !important;
+}
+
+.select-3 select{
+	padding: 0rem .8rem;
+	height: 60%;
+}
+
+.input-5 input.input2,
+.select-3 select.select2{
+	padding-left: 1.5rem !important;
+}
+
+.input-5 input:required:invalid:focus{
+	border-color: red;
+}
+
+.input-5 input.input2 ~ i,
+.select-3 select.select2 ~ i{
+	left: 0;
+}
+
+.input-5 input ~ i,
+.select-3 select ~ i{
+	position: absolute;
+	bottom: calc(25% + 0px);
+	left: .7rem;
+	transform: translateY(40%);
+	color: silver;
+	transition: .5s;
+}
+
+.input-5 input ~ i.x,
+.select-5 select ~ i.x{
+	bottom: calc(25% + 1px);
+}
+
+.input-5 input:required:invalid::-ms-input-placeholder{
+	color: black !important;
+}
+
+.input-5 input:required:invalid:not(:placeholder-shown) ~ i{
+	color: red;
+}
+
+.input-5 input:required:invalid:focus ~ i{
+	color: red;
+}
+
+.input-5 input:required:valid ~ i,
+.select-3 select:required:valid ~ i{
+	color: inherit;
+}
+
+.input-5 input ~ label,
+.select-3 select ~ label{
+	pointer-events: auto;
+	bottom: 70%;
+	font-size: 70%;
+	color: silver;
+	font-weight: bolder;
+	text-transform: uppercase;
+	pointer-events: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.input-5 input:focus ~ label,
+.input-5 input:valid ~ label,
+.input-5 input:required:invalid ~ label{
+	bottom: 70%;
+}
+
+.input-5.x input ~ label{
+	padding: 2px 6px;
+	background: silver;
+	color: black;
+	box-shadow: inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white,
+				inset 0 0 2px white;
+	text-transform: none;
+}
+
+
+
+
+
+
+/*globais*/
+
+.input-2.x input.input1 ~ label,
+.input-3.x input.input1 ~ label,
+.input-4.x input.input1 ~ label,
+.input-5.x input.input1 ~ label{
+	background: #eee;
+}
+
+.input-1 input.input1:required:invalid,
+.input-2 input.input1:required:invalid,
+.input-3 input.input1:required:invalid,
+.input-4 input.input1:required:invalid,
+.input-5 input.input1:required:invalid{
+	border-color: #f1f1f1;
+}
+
+
+
+
+/*Formularios*/
+
+.form-1{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-1 > input{
+	display: none;
+}
+
+.form-1 [class*="mudar-"]{
+	position: absolute;
+	transform: translateX(-50%);
+	bottom: 10%;
+	padding: 6px 10px;
+	z-index: 0;
+	opacity: 0;
+	transition: 1s;
+	font-variant: normal;
+	/*border: 1px solid;*/
+	left: 25%;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bolder;
+	box-shadow: inset 0 0 0 20px rgba(0,0,0,0.0);
+}
+
+.form-1 [class*="mudar-"]:hover{
+	box-shadow: inset 0 0 0 20px rgba(0,0,0,0.6);
+	transition-delay: 0s;
+	transition: .5s;
+}
+
+.form-1 #mudar-1:checked ~ .mudar-2{
+	left: 75%;
+	opacity: 1;
+	z-index: 4;
+	transition: 1s ease;
+	/*transition-delay: .5s;*/
+}
+
+.form-1 #mudar-2:checked ~ .mudar-1{
+	left: 25%;
+	opacity: 1;
+	z-index: 4;
+	transition: 1s ease;
+	transition-delay: .5s;
+}
+
+
+
+/*form-1 global*/
+
+.form-1 .formulario,
+.form-1 .informacao,
+.form-1 .janela{
+	position: absolute;
+	height: 100%;
+	transition: 1s;
+}
+
+/*formulario*/
+
+.form-1 .formulario{
+	width: 50%;
+	z-index: 1;
+}
+
+.form-1 #mudar-1:checked ~ .formulario{
+	left: 0;
+}
+
+.form-1 #mudar-2:checked ~ .formulario{
+	left: 50%;
+}
+
+.form-1 .formulario [class*="formulario-"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: .7s;
+	/*padding: 2rem;*/
+	opacity: 0;
+	border-radius: inherit;
+}
+
+.form-1 #mudar-1:checked ~ .formulario .formulario-1{
+	opacity: 1;
+	z-index: 1;
+}
+
+.form-1 #mudar-2:checked ~ .formulario .formulario-2{
+	opacity: 1;
+}
+
+
+/*janela*/
+
+.form-1 .janela{
+	width: 50%;
+	z-index: 2;
+	/*background-image: url(../multimedia/png/1.png);*/
+	/*background-attachment: scroll;*/
+	background-size: 200%;
+}
+
+.form-1 .janela::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: inherit !important;
+}
+
+.form-1 #mudar-1:checked ~ .janela{
+	right: 0;
+	background-position: right;
+	/*animation: anim;
+	animation-duration: 3s;
+	animation-iteration-count: 1;*/
+}
+
+.form-1 #mudar-2:checked ~ .janela{
+	right: 50%;
+	background-position: left;
+	/*animation: anim;
+	animation-duration: 3s;
+	animation-iteration-count: 1;*/
+}
+
+
+/*@keyframes anim{
+	0%{
+		transform: scale(1.1);
+	}
+
+	50%{
+		transform: scale(5.1);
+	}
+
+	100%{
+		transform: scale(1.1);
+	}
+}*/
+
+
+/*informacao*/
+
+.form-1 .informacao{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-1 .informacao [class*="informacao-"]{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	transition: 1s;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding-bottom: 10%;
+}
+
+.form-1 .informacao [class*="informacao-"] p{
+	overflow: hidden;
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+}
+
+.form-1 .informacao .informacao-1{
+	left: -50%;
+	opacity: 0;
+	z-index: 3;
+}
+
+.form-1 .informacao .informacao-2{
+	right: -50%;
+	opacity: 0;
+	z-index: 3;
+}
+
+.form-1 #mudar-2:checked ~ .informacao .informacao-1{
+	left: 0;
+	opacity: 1;
+}
+
+.form-1 #mudar-1:checked ~ .informacao .informacao-2{
+	right: 0;
+	opacity: 1;
+}
+
+
+
+
+@media(max-width: 630px){
+
+	.form-1{
+		flex-direction: column;
+		height: 100vh !important;
+		min-height: 80vh !important;
+		width: 100%;
+	}
+
+	.form-1 [class*="mudar-"]{
+		bottom: 55%;
+	}
+
+	.form-1 #mudar-1:checked ~ .mudar-2{
+		left: 50%;
+	}
+
+	.form-1 #mudar-2:checked ~ .mudar-1{
+		left: 50%;
+		transition-delay: 0s;
+	}
+
+	.form-1 .formulario,
+	.form-1 .informacao,
+	.form-1 .janela{
+		position: absolute;
+		height: 50%;
+		width: 100%;
+		transition: 1s;
+	}
+
+	/*formulario*/
+
+	.form-1 .formulario{
+		top: 50%;
+		z-index: 1;
+		left: 100%;
+	}
+
+	.form-1 [id*="mudar-"] ~ .formulario{
+		left: 100%;
+	}
+
+	.form-1 #mudar-1:checked ~ .formulario{
+		left: 0;
+	}
+
+	.form-1 #mudar-2:checked ~ .formulario{
+		left: 0%;
+	}
+
+	/*janela*/
+
+	.form-1 #mudar-1:checked ~ .janela{
+		right: 0;
+		background-position: left;
+		/*animation: anim;
+		animation-duration: 3s;
+		animation-iteration-count: 1;*/
+	}
+
+	.form-1 #mudar-2:checked ~ .janela{
+		right: 0%;
+		background-position: right;
+		/*animation: anim;
+		animation-duration: 3s;
+		animation-iteration-count: 1;*/
+	}
+
+	/*informacao*/
+
+	.form-1 .informacao [class*="informacao-"]{
+		width: 100%;
+		height: 100%;
+	}
+	.form-1 .informacao .informacao-1{
+		left: -100%;
+	}
+
+	.form-1 .informacao .informacao-2{
+		right: -100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*efeitos*/
+
+.blur{
+	position: relative;
+	overflow: hidden;
+}
+
+.blur .frente{
+	position: absolute;
+	top: 50%;
+	top: calc(50% + 0px);
+	left: calc(50% + 0px);
+	transform: translate(-50%, -50%);
+	width: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 300% auto;
+	z-index: 1;
+	transition: 2s box-shadow, 2s filter;
+}
+
+.blur .fundo{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 150% auto;
+	transition: 2s filter, 2s box-shadow;
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.0),
+				inset 0 0 0 1000px rgba(0,0,0,0.0);
+}
+
+.blur .frente:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.blur.x .frente:hover{
+	filter: blur(0px);
+}
+
+.blur.x .frente:hover ~ .fundo{
+	box-shadow: none;
+}
+
+.blur .frente:hover ~ .fundo{
+	filter: blur(10px);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.MotionBlur(strength=50), progid:DXImageTransform.Microsoft.BasicImage(mirror=5)';
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5),
+				inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+[class*="fundos-"]{
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.fundos-1{
+	background: url(../media/1.gif);
+}
+
+.fundos-2{
+	background: url(../media/2.gif);
+}

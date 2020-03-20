@@ -1,0 +1,133 @@
+/*Importando fontes*/
+
+@font-face{	src:url(.././fontes/ttf/fonte1.ttf);	font-family: fonte1-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte1.otf);	font-family: fonte1-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte2.ttf);	font-family: fonte2-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte2.otf);	font-family: fonte2-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte3.ttf);	font-family: fonte3-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte3.otf);	font-family: fonte3-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte4.ttf);	font-family: fonte4-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte4.otf);	font-family: fonte4-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte5.ttf);	font-family: fonte5-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte5.otf);	font-family: fonte5-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte6.ttf);	font-family: fonte6-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte6.otf);	font-family: fonte6-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte7.ttf);	font-family: fonte7-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte7.otf);	font-family: fonte7-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte8.ttf);	font-family: fonte8-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte8.otf);	font-family: fonte8-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte9.ttf);	font-family: fonte9-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte9.otf);	font-family: fonte9-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte10.ttf);	font-family: fonte10-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte10.otf);	font-family: fonte10-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte11.ttf);	font-family: fonte11-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte11.otf);	font-family: fonte11-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte12.ttf);	font-family: fonte12-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte12.otf);	font-family: fonte12-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte13.ttf);	font-family: fonte13-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte13.otf);	font-family: fonte13-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte14.ttf);	font-family: fonte14-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte14.otf);	font-family: fonte14-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte15.ttf);	font-family: fonte15-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte15.otf);	font-family: fonte15-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte16.ttf);	font-family: fonte16-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte16.otf);	font-family: fonte16-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte17.ttf);	font-family: fonte17-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte17.otf);	font-family: fonte17-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte18.ttf);	font-family: fonte18-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte18.otf);	font-family: fonte18-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte19.ttf);	font-family: fonte19-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte19.otf);	font-family: fonte19-otf;	}
+@font-face{	src:url(.././fontes/ttf/fonte20.ttf);	font-family: fonte20-ttf;	}  		@font-face{	src:url(.././fontes/otf/fonte20.otf);	font-family: fonte20-otf;	}
+
+
+/*Tipo de fonte*/
+/*Fontes em formato true type font(ttf)*/											/*Fontes em formato open type font(otf)*/
+
+.escrita1-ttf, .letra1-ttf, .fonte1-ttf{ font-family: fonte1-ttf; }  				.escrita1-otf, .letra1-otf, .fonte1-otf{ font-family: fonte1-otf; }
+.escrita2-ttf, .letra2-ttf, .fonte2-ttf{ font-family: fonte2-ttf; }  				.escrita2-otf, .letra2-otf, .fonte2-otf{ font-family: fonte2-otf; }
+.escrita3-ttf, .letra3-ttf, .fonte3-ttf{ font-family: fonte3-ttf; }  				.escrita3-otf, .letra3-otf, .fonte3-otf{ font-family: fonte3-otf; }
+.escrita4-ttf, .letra4-ttf, .fonte4-ttf{ font-family: fonte4-ttf; }  				.escrita4-otf, .letra4-otf, .fonte4-otf{ font-family: fonte4-otf; }
+.escrita5-ttf, .letra5-ttf, .fonte5-ttf{ font-family: fonte5-ttf; }  				.escrita5-otf, .letra5-otf, .fonte5-otf{ font-family: fonte5-otf; }
+.escrita6-ttf, .letra6-ttf, .fonte6-ttf{ font-family: fonte6-ttf; }  				.escrita6-otf, .letra6-otf, .fonte6-otf{ font-family: fonte6-otf; }
+.escrita7-ttf, .letra7-ttf, .fonte7-ttf{ font-family: fonte7-ttf; }  				.escrita7-otf, .letra7-otf, .fonte7-otf{ font-family: fonte7-otf; }
+.escrita8-ttf, .letra8-ttf, .fonte8-ttf{ font-family: fonte8-ttf; }  				.escrita8-otf, .letra8-otf, .fonte8-otf{ font-family: fonte8-otf; }
+.escrita9-ttf, .letra9-ttf, .fonte9-ttf{ font-family: fonte9-ttf; }  				.escrita9-otf, .letra9-otf, .fonte9-otf{ font-family: fonte9-otf; }
+.escrita10-ttf, .letra10-ttf, .fonte10-ttf{ font-family: fonte10-ttf; }  			.escrita10-otf, .letra10-otf, .fonte10-otf{ font-family: fonte10-otf; }
+.escrita11-ttf, .letra11-ttf, .fonte11-ttf{ font-family: fonte11-ttf; }  			.escrita11-otf, .letra11-otf, .fonte11-otf{ font-family: fonte11-otf; }
+.escrita12-ttf, .letra12-ttf, .fonte12-ttf{ font-family: fonte12-ttf; }  			.escrita12-otf, .letra12-otf, .fonte12-otf{ font-family: fonte12-otf; }
+.escrita13-ttf, .letra13-ttf, .fonte13-ttf{ font-family: fonte13-ttf; }  			.escrita13-otf, .letra13-otf, .fonte13-otf{ font-family: fonte13-otf; }
+.escrita14-ttf, .letra14-ttf, .fonte14-ttf{ font-family: fonte14-ttf; }  			.escrita14-otf, .letra14-otf, .fonte14-otf{ font-family: fonte14-otf; }
+.escrita15-ttf, .letra15-ttf, .fonte15-ttf{ font-family: fonte15-ttf; }  			.escrita15-otf, .letra15-otf, .fonte15-otf{ font-family: fonte15-otf; }
+.escrita16-ttf, .letra16-ttf, .fonte16-ttf{ font-family: fonte16-ttf; }  			.escrita16-otf, .letra16-otf, .fonte16-otf{ font-family: fonte16-otf; }
+.escrita17-ttf, .letra17-ttf, .fonte17-ttf{ font-family: fonte17-ttf; }  			.escrita17-otf, .letra17-otf, .fonte17-otf{ font-family: fonte17-otf; }
+.escrita18-ttf, .letra18-ttf, .fonte18-ttf{ font-family: fonte18-ttf; }  			.escrita18-otf, .letra18-otf, .fonte18-otf{ font-family: fonte18-otf; }
+.escrita19-ttf, .letra19-ttf, .fonte19-ttf{ font-family: fonte19-ttf; }  			.escrita19-otf, .letra19-otf, .fonte19-otf{ font-family: fonte19-otf; }
+.escrita20-ttf, .letra20-ttf, .fonte20-ttf{ font-family: fonte20-ttf; }  			.escrita20-otf, .letra20-otf, .fonte20-otf{ font-family: fonte20-otf; }
+
+
+/*Classes de imagens de fundo*/
+/*Classes de imagens de fundo em formato jpg*/
+
+.imagem1-jpg{	background: url(.././fundo/jpg/1.jpg) !important;	} 		.imagem21-jpg{	background: url(.././fundo/jpg/21.jpg) !important;	} 		.imagem41-jpg{	background: url(.././fundo/jpg/41.jpg) !important;	}
+.imagem2-jpg{	background: url(.././fundo/jpg/2.jpg) !important;	} 		.imagem22-jpg{	background: url(.././fundo/jpg/22.jpg) !important;	} 		.imagem42-jpg{	background: url(.././fundo/jpg/42.jpg) !important;	}
+.imagem3-jpg{	background: url(.././fundo/jpg/3.jpg) !important;	} 		.imagem23-jpg{	background: url(.././fundo/jpg/23.jpg) !important;	} 		.imagem43-jpg{	background: url(.././fundo/jpg/43.jpg) !important;	}
+.imagem4-jpg{	background: url(.././fundo/jpg/4.jpg) !important;	} 		.imagem24-jpg{	background: url(.././fundo/jpg/24.jpg) !important;	} 		.imagem44-jpg{	background: url(.././fundo/jpg/44.jpg) !important;	}
+.imagem5-jpg{	background: url(.././fundo/jpg/5.jpg) !important;	} 		.imagem25-jpg{	background: url(.././fundo/jpg/25.jpg) !important;	} 		.imagem45-jpg{	background: url(.././fundo/jpg/45.jpg) !important;	}
+.imagem6-jpg{	background: url(.././fundo/jpg/6.jpg) !important;	} 		.imagem26-jpg{	background: url(.././fundo/jpg/26.jpg) !important;	} 		.imagem46-jpg{	background: url(.././fundo/jpg/46.jpg) !important;	}
+.imagem7-jpg{	background: url(.././fundo/jpg/7.jpg) !important;	} 		.imagem27-jpg{	background: url(.././fundo/jpg/27.jpg) !important;	} 		.imagem47-jpg{	background: url(.././fundo/jpg/47.jpg) !important;	}
+.imagem8-jpg{	background: url(.././fundo/jpg/8.jpg) !important;	} 		.imagem28-jpg{	background: url(.././fundo/jpg/28.jpg) !important;	} 		.imagem48-jpg{	background: url(.././fundo/jpg/48.jpg) !important;	}
+.imagem9-jpg{	background: url(.././fundo/jpg/9.jpg) !important;	} 		.imagem29-jpg{	background: url(.././fundo/jpg/29.jpg) !important;	} 		.imagem49-jpg{	background: url(.././fundo/jpg/49.jpg) !important;	}
+.imagem10-jpg{	background: url(.././fundo/jpg/10.jpg) !important;	} 		.imagem30-jpg{	background: url(.././fundo/jpg/30.jpg) !important;	} 		.imagem50-jpg{	background: url(.././fundo/jpg/50.jpg) !important;	}
+.imagem11-jpg{	background: url(.././fundo/jpg/11.jpg) !important;	} 		.imagem31-jpg{	background: url(.././fundo/jpg/31.jpg) !important;	} 		.imagem51-jpg{	background: url(.././fundo/jpg/51.jpg) !important;	}
+.imagem12-jpg{	background: url(.././fundo/jpg/12.jpg) !important;	} 		.imagem32-jpg{	background: url(.././fundo/jpg/32.jpg) !important;	} 		.imagem52-jpg{	background: url(.././fundo/jpg/52.jpg) !important;	}
+.imagem13-jpg{	background: url(.././fundo/jpg/13.jpg) !important;	} 		.imagem33-jpg{	background: url(.././fundo/jpg/33.jpg) !important;	} 		.imagem53-jpg{	background: url(.././fundo/jpg/53.jpg) !important;	}
+.imagem14-jpg{	background: url(.././fundo/jpg/14.jpg) !important;	} 		.imagem34-jpg{	background: url(.././fundo/jpg/34.jpg) !important;	} 		.imagem54-jpg{	background: url(.././fundo/jpg/54.jpg) !important;	}
+.imagem15-jpg{	background: url(.././fundo/jpg/15.jpg) !important;	} 		.imagem35-jpg{	background: url(.././fundo/jpg/35.jpg) !important;	} 		.imagem55-jpg{	background: url(.././fundo/jpg/55.jpg) !important;	}
+.imagem16-jpg{	background: url(.././fundo/jpg/16.jpg) !important;	} 		.imagem36-jpg{	background: url(.././fundo/jpg/36.jpg) !important;	} 		.imagem56-jpg{	background: url(.././fundo/jpg/56.jpg) !important;	}
+.imagem17-jpg{	background: url(.././fundo/jpg/17.jpg) !important;	} 		.imagem37-jpg{	background: url(.././fundo/jpg/37.jpg) !important;	} 		.imagem57-jpg{	background: url(.././fundo/jpg/57.jpg) !important;	}
+.imagem18-jpg{	background: url(.././fundo/jpg/18.jpg) !important;	} 		.imagem38-jpg{	background: url(.././fundo/jpg/38.jpg) !important;	} 		.imagem58-jpg{	background: url(.././fundo/jpg/58.jpg) !important;	}
+.imagem19-jpg{	background: url(.././fundo/jpg/19.jpg) !important;	} 		.imagem39-jpg{	background: url(.././fundo/jpg/39.jpg) !important;	} 		.imagem59-jpg{	background: url(.././fundo/jpg/59.jpg) !important;	}
+.imagem20-jpg{	background: url(.././fundo/jpg/20.jpg) !important;	} 		.imagem40-jpg{	background: url(.././fundo/jpg/40.jpg) !important;	} 		.imagem60-jpg{	background: url(.././fundo/jpg/60.jpg) !important;	}
+
+/*Classes de imagens de fundo em formato png*/
+
+.imagem1-png{	background: url(.././fundo/png/1.png) !important;	} 		.imagem21-png{	background: url(.././fundo/png/21.png) !important;	} 		.imagem41-png{	background: url(.././fundo/png/41.png) !important;	}
+.imagem2-png{	background: url(.././fundo/png/2.png) !important;	} 		.imagem22-png{	background: url(.././fundo/png/22.png) !important;	} 		.imagem42-png{	background: url(.././fundo/png/42.png) !important;	}
+.imagem3-png{	background: url(.././fundo/png/3.png) !important;	} 		.imagem23-png{	background: url(.././fundo/png/23.png) !important;	} 		.imagem43-png{	background: url(.././fundo/png/43.png) !important;	}
+.imagem4-png{	background: url(.././fundo/png/4.png) !important;	} 		.imagem24-png{	background: url(.././fundo/png/24.png) !important;	} 		.imagem44-png{	background: url(.././fundo/png/44.png) !important;	}
+.imagem5-png{	background: url(.././fundo/png/5.png) !important;	} 		.imagem25-png{	background: url(.././fundo/png/25.png) !important;	} 		.imagem45-png{	background: url(.././fundo/png/45.png) !important;	}
+.imagem6-png{	background: url(.././fundo/png/6.png) !important;	} 		.imagem26-png{	background: url(.././fundo/png/26.png) !important;	} 		.imagem46-png{	background: url(.././fundo/png/46.png) !important;	}
+.imagem7-png{	background: url(.././fundo/png/7.png) !important;	} 		.imagem27-png{	background: url(.././fundo/png/27.png) !important;	} 		.imagem47-png{	background: url(.././fundo/png/47.png) !important;	}
+.imagem8-png{	background: url(.././fundo/png/8.png) !important;	} 		.imagem28-png{	background: url(.././fundo/png/28.png) !important;	} 		.imagem48-png{	background: url(.././fundo/png/48.png) !important;	}
+.imagem9-png{	background: url(.././fundo/png/9.png) !important;	} 		.imagem29-png{	background: url(.././fundo/png/29.png) !important;	} 		.imagem49-png{	background: url(.././fundo/png/49.png) !important;	}
+.imagem10-png{	background: url(.././fundo/png/10.png) !important;	} 		.imagem30-png{	background: url(.././fundo/png/30.png) !important;	} 		.imagem50-png{	background: url(.././fundo/png/50.png) !important;	}
+.imagem11-png{	background: url(.././fundo/png/11.png) !important;	} 		.imagem31-png{	background: url(.././fundo/png/31.png) !important;	} 		.imagem51-png{	background: url(.././fundo/png/51.png) !important;	}
+.imagem12-png{	background: url(.././fundo/png/12.png) !important;	} 		.imagem32-png{	background: url(.././fundo/png/32.png) !important;	} 		.imagem52-png{	background: url(.././fundo/png/52.png) !important;	}
+.imagem13-png{	background: url(.././fundo/png/13.png) !important;	} 		.imagem33-png{	background: url(.././fundo/png/33.png) !important;	} 		.imagem53-png{	background: url(.././fundo/png/53.png) !important;	}
+.imagem14-png{	background: url(.././fundo/png/14.png) !important;	} 		.imagem34-png{	background: url(.././fundo/png/34.png) !important;	} 		.imagem54-png{	background: url(.././fundo/png/54.png) !important;	}
+.imagem15-png{	background: url(.././fundo/png/15.png) !important;	} 		.imagem35-png{	background: url(.././fundo/png/35.png) !important;	} 		.imagem55-png{	background: url(.././fundo/png/55.png) !important;	}
+.imagem16-png{	background: url(.././fundo/png/16.png) !important;	} 		.imagem36-png{	background: url(.././fundo/png/36.png) !important;	} 		.imagem56-png{	background: url(.././fundo/png/56.png) !important;	}
+.imagem17-png{	background: url(.././fundo/png/17.png) !important;	} 		.imagem37-png{	background: url(.././fundo/png/37.png) !important;	} 		.imagem57-png{	background: url(.././fundo/png/57.png) !important;	}
+.imagem18-png{	background: url(.././fundo/png/18.png) !important;	} 		.imagem38-png{	background: url(.././fundo/png/38.png) !important;	} 		.imagem58-png{	background: url(.././fundo/png/58.png) !important;	}
+.imagem19-png{	background: url(.././fundo/png/19.png) !important;	} 		.imagem39-png{	background: url(.././fundo/png/39.png) !important;	} 		.imagem59-png{	background: url(.././fundo/png/59.png) !important;	}
+.imagem20-png{	background: url(.././fundo/png/20.png) !important;	} 		.imagem40-png{	background: url(.././fundo/png/40.png) !important;	} 		.imagem60-png{	background: url(.././fundo/png/60.png) !important;	}
+
+/*Classes de imagens de fundo em formato gif*/
+
+.imagem1-gif{	background: url(.././fundo/gif/1.gif) !important;	} 		.imagem21-gif{	background: url(.././fundo/gif/21.gif) !important;	} 		.imagem41-gif{	background: url(.././fundo/gif/41.gif) !important;	}
+.imagem2-gif{	background: url(.././fundo/gif/2.gif) !important;	} 		.imagem22-gif{	background: url(.././fundo/gif/22.gif) !important;	} 		.imagem42-gif{	background: url(.././fundo/gif/42.gif) !important;	}
+.imagem3-gif{	background: url(.././fundo/gif/3.gif) !important;	} 		.imagem23-gif{	background: url(.././fundo/gif/23.gif) !important;	} 		.imagem43-gif{	background: url(.././fundo/gif/43.gif) !important;	}
+.imagem4-gif{	background: url(.././fundo/gif/4.gif) !important;	} 		.imagem24-gif{	background: url(.././fundo/gif/24.gif) !important;	} 		.imagem44-gif{	background: url(.././fundo/gif/44.gif) !important;	}
+.imagem5-gif{	background: url(.././fundo/gif/5.gif) !important;	} 		.imagem25-gif{	background: url(.././fundo/gif/25.gif) !important;	} 		.imagem45-gif{	background: url(.././fundo/gif/45.gif) !important;	}
+.imagem6-gif{	background: url(.././fundo/gif/6.gif) !important;	} 		.imagem26-gif{	background: url(.././fundo/gif/26.gif) !important;	} 		.imagem46-gif{	background: url(.././fundo/gif/46.gif) !important;	}
+.imagem7-gif{	background: url(.././fundo/gif/7.gif) !important;	} 		.imagem27-gif{	background: url(.././fundo/gif/27.gif) !important;	} 		.imagem47-gif{	background: url(.././fundo/gif/47.gif) !important;	}
+.imagem8-gif{	background: url(.././fundo/gif/8.gif) !important;	} 		.imagem28-gif{	background: url(.././fundo/gif/28.gif) !important;	} 		.imagem48-gif{	background: url(.././fundo/gif/48.gif) !important;	}
+.imagem9-gif{	background: url(.././fundo/gif/9.gif) !important;	} 		.imagem29-gif{	background: url(.././fundo/gif/29.gif) !important;	} 		.imagem49-gif{	background: url(.././fundo/gif/49.gif) !important;	}
+.imagem10-gif{	background: url(.././fundo/gif/10.gif) !important;	} 		.imagem30-gif{	background: url(.././fundo/gif/30.gif) !important;	} 		.imagem50-gif{	background: url(.././fundo/gif/50.gif) !important;	}
+.imagem11-gif{	background: url(.././fundo/gif/11.gif) !important;	} 		.imagem31-gif{	background: url(.././fundo/gif/31.gif) !important;	} 		.imagem51-gif{	background: url(.././fundo/gif/51.gif) !important;	}
+.imagem12-gif{	background: url(.././fundo/gif/12.gif) !important;	} 		.imagem32-gif{	background: url(.././fundo/gif/32.gif) !important;	} 		.imagem52-gif{	background: url(.././fundo/gif/52.gif) !important;	}
+.imagem13-gif{	background: url(.././fundo/gif/13.gif) !important;	} 		.imagem33-gif{	background: url(.././fundo/gif/33.gif) !important;	} 		.imagem53-gif{	background: url(.././fundo/gif/53.gif) !important;	}
+.imagem14-gif{	background: url(.././fundo/gif/14.gif) !important;	} 		.imagem34-gif{	background: url(.././fundo/gif/34.gif) !important;	} 		.imagem54-gif{	background: url(.././fundo/gif/54.gif) !important;	}
+.imagem15-gif{	background: url(.././fundo/gif/15.gif) !important;	} 		.imagem35-gif{	background: url(.././fundo/gif/35.gif) !important;	} 		.imagem55-gif{	background: url(.././fundo/gif/55.gif) !important;	}
+.imagem16-gif{	background: url(.././fundo/gif/16.gif) !important;	} 		.imagem36-gif{	background: url(.././fundo/gif/36.gif) !important;	} 		.imagem56-gif{	background: url(.././fundo/gif/56.gif) !important;	}
+.imagem17-gif{	background: url(.././fundo/gif/17.gif) !important;	} 		.imagem37-gif{	background: url(.././fundo/gif/37.gif) !important;	} 		.imagem57-gif{	background: url(.././fundo/gif/57.gif) !important;	}
+.imagem18-gif{	background: url(.././fundo/gif/18.gif) !important;	} 		.imagem38-gif{	background: url(.././fundo/gif/38.gif) !important;	} 		.imagem58-gif{	background: url(.././fundo/gif/58.gif) !important;	}
+.imagem19-gif{	background: url(.././fundo/gif/19.gif) !important;	} 		.imagem39-gif{	background: url(.././fundo/gif/39.gif) !important;	} 		.imagem59-gif{	background: url(.././fundo/gif/59.gif) !important;	}
+.imagem20-gif{	background: url(.././fundo/gif/20.gif) !important;	} 		.imagem40-gif{	background: url(.././fundo/gif/40.gif) !important;	} 		.imagem60-gif{	background: url(.././fundo/gif/60.gif) !important;	}
+
+
+
+
+/*Pre definicao padrao das propriedades da imagem do fundo*/
+
+[class*="-jpg"], [class*="-png"], [class*="-gif"]{  background-size: cover; background-position: center center; background-repeat: no-repeat; }
+
+/*Classes de posicao das imagens de fundo*/
+
+.img-auto, .imagem-auto{ width: auto; height: auto; }
+.img-c, .img-cima .imagem-c, .imagem-cima{ background-position: top; }
+.img-b, .img-baixo .imagem-b, .imagem-baixo{ background-position: bottom; }
+.img-d, .img-direita .imagem-d, .imagem-direita{ background-position: right; }
+.img-e, .img-esquerda .imagem-e, .imagem-esquerda{ background-position: left; }
